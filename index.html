@@ -1,1 +1,279 @@
-<p>Hello World!</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Corinne Krych</title>
+	<meta name="description" content="let me introduce myself" />
+    <meta name="author" content="Corinne Krych" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />	 
+
+<link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress">	 
+
+    <div id="Presentation" class="step big" data-x="-4000" data-y="-3000">
+        <img src="img/corinne.png" style="width:128px; height:128px;"/>
+        <p>Corinne Krych</p><br>
+        <a href="https://twitter.com/corinnekrych"><img src="img/twitter.png" style="position:absolute; left:15%; width:64px"/></a>
+        <a href="https://github.com/corinnekrych"><img src="img/github.png" style="position:absolute;left:30%;width:64px;"/></a>
+        <a href="http://corinnekrych.blogspot.fr/"><img src="img/blogger.png" style="position:absolute;left:45%;width:64px;"/></a>
+        <a href="mailto:corinnekrych@gmail.com"><img src="img/gmail.png" style="position:absolute;left:60%;width:64px;"/></a>
+        <a href="https://plus.google.com/u/0/115252170034907237047/posts"><img src="img/gplus.png" style="position:absolute ;left:75%;width:64px;"/></a>
+    </div>
+    <div id="values" class="step" style="margin-top: -100px;text-align: center;" data-x="-2000" data-y="-3000">
+        <div><q>Values</q>
+    Code is craft
+    Collaboration is key
+    DRY KISS Practitioner
+    TDD Obsessed
+    Delve into Mobile application
+    Motto: Always room for improvement, refactor
+
+I love chatting the latest tech trends at coffee break: female geek -what do you expect-
+
+Social coding fan: tweet me
+
+        <p>40y Geek 15y exp.</p>
+        <p>DEV-SEP-DV2-ARC-ARN</p>
+    </div>
+         <img src="img/rivieragug.jpg" style="position:absolute; left:5px; width:128px"/>
+         <div class="small" style="margin-top: 200px;position:absolute; left:5px; width:128px">Co-Founder</div>
+         <img src="img/3musket33rs.jpeg" style="position:absolute; margin-left: -64px; left:50%;width:128px;"/>
+         <div class="small" style="margin-top: 200px;position:absolute; margin-left: -64px; left:50%;width:128px;">Grails Plugin Developer</div>
+         <img src="img/blueball.jpeg" style="position:absolute ;right:5px ;width:128px; "/>
+         <div class="small" style="margin-top: 200px;position:absolute ;right:5px ;width:128px; ">System Architect</div>
+    </div>
+    <div id="ProblemSpace" class="step big" style="width:1000px" data-x="-500" data-y="-3000">
+        <b>Problem Space</b>
+        <div id="wordcloud" style="height:500px;width:800px;"> 
+            <span data-weight="9">Mobile</span>
+            <span data-weight="6">Twitter</span>
+            <span data-weight="5">PC</span>
+            <span data-weight="8">FaceBook</span>
+            <span data-weight="7">RealTime Chat</span>
+            <span data-weight="8">Social</span>
+            <span data-weight="8">Video</span>
+            <span data-weight="8">Streaming</span>
+            <span data-weight="4">Music</span>
+        </div>
+    </div>
+    <div id="why" class="step" data-x="-1000" data-y="-1500">
+        <q>Who has used synchronized?</q>
+    </div>
+    <div id="why2" class="step big" data-x="-1000" data-y="-1500" data-scale="0.01">
+	<p>You did it<b>wrong</b></p>
+    </div>
+    <div id="why3" class="step" data-x="1000" data-y="-1500">
+        <q>Who uses lock object?</q>
+    </div>
+    <div id="why4" class="step big" data-x="1000" data-y="-1500"  data-scale="0.01">
+        <q>You <b>definitely</b> did it <b>wrong</b></q>
+    </div>
+    <div id="consequences" class="step" data-x="3700" data-y="-1500"  data-rotate="90">
+        <div class="big" style="text-align: center;">
+            <b>Starvation</b>
+        </div>
+        <div>
+		 <img src="img/cheetah.gif" style="position:absolute; left:0px; width:256px"/>
+		 <img src="img/arrow.png" style="position:absolute; margin-left: -64px; left:50%;width:128px;"/>
+		 <img src="img/snail.png" style="margin-top: -50px; position:absolute ;right:0px ;width:256px; "/>
+         </div>
+    </div>
+    <div id="bigproblem" class="step big" data-x="3000" data-y="-1500"  data-rotate="90" data-scale="10">
+        <q>The <b>C10K</b> problem</q>
+    </div>
+    <div id="theory" class="step" style="margin-top: -100px;text-align: center;" data-x="5000" data-y="-1500">
+        <p><b>Reactor Pattern</b></p>
+        <p>Douglas C. Schmidt</p>
+        <p>Pattern Languages of Program Design 1995 </p>
+        <div style="font-size:30px;">ISBN 0-201-6073-4</div>
+        <div>
+        <span style="font-size:30px;position:absolute ;left:0px ;width:300px;">http://www.cse.wustl.edu/~schmidt/PDF/reactor-siemens.pdf</span>
+        <span><img src="img/pattern.gif" style="position:absolute ;right:0px ;width:256px; "/></span> 
+    </div>
+    </div>
+    <div id="theoryReactor" class="step"  style="width: 435px;" data-x="5000" data-y="-500">
+        <img src="img/classdiagram_reactor.png"/>
+    </div>
+    <div id="theoryReactor2" class="step" style="width: 569px; " data-x="5000" data-y="500">
+        <img src="img/interaction_reactor_pattern.png"/>
+    </div>
+    <div id="theoryReactor3" class="step" data-x="5000" data-y="1500">
+        <img src="img/reactor-pattern.jpg"/>
+    </div>
+    <div id="NodeJS" class="step" data-x="7000" data-y="-1500">
+         <img src="img/nodejs.png" style="width:800px;" />
+    </div>
+    <div id="ClassicalMTS" class="step" data-x="7000" data-y="-500">
+         <img src="img/multiThreadedServer.png" style="width:800px;"/>
+    </div>
+    <div id="NodeJSReactor" class="step" data-x="7000" data-y="500">
+         <img src="img/NodeJS-Reactor.png" style="width:800px;"/>
+    </div>
+    <div id="bored2" class="step big" data-x="9000" data-y="-1500">
+        <q>Node.js is <b>JavaScript</b> only</q>
+    </div>
+    <div id="exiting" class="step big" data-x="11000" data-y="-1500" data-rotate="90">
+        <q>What if you want a <b>real</b> language ?</q>
+    </div>
+    <div id="moreexiting" class="step" data-x="13000" data-y="-1500">
+      <div class="hero-unit" style="color:black; padding: 30px;">
+        <h1>vert.x</h1>
+        <p class="title">Effortless asynchronous application development for the modern
+          web and enterprise</p>          
+      </div>
+    </div>
+    <div id="evenmore" class="step" style="text-align: center;" data-x="13000" data-y="-1300">
+        Polyglot
+    </div>
+    <div id="evenmore1" class="step" style="text-align: center;" data-x="13000" data-y="-1200">
+        Scalability
+    </div>
+    <div id="evenmore2" class="step" style="text-align: center;" data-x="13000" data-y="-1100">
+        Simplicity
+    </div>
+    <div id="evenmore3" class="step" style="text-align: center;" data-x="13000" data-y="-1000">
+        Concurrency
+    </div>
+    <div id="evenmore4" class="step" style="text-align: center;" data-x="13000" data-y="-900">
+        Distributed Event Bus
+    </div>
+    <div id="evenmore5" class="step" style="text-align: center;" data-x="13000" data-y="-800">
+        Embedebable
+    </div>
+    <div id="evenmore6" class="step" style="text-align: center;" data-x="13000" data-y="-600">        
+        Read yourself the documentation at http://vertx.io
+    </div>
+    <div id="goodies" class="step" style="text-align: center;" data-x="17000" data-y="-1500">
+        <div>
+            Amazing Open Source Projects
+        </div>
+        <div>
+            <b>Netty</b> Network IO
+        </div>
+        <div>
+            <b>JRuby</b>
+        </div>
+        <div>
+            <b>Groovy</b>
+        </div>
+        <div>
+            <b>Mozilla Rhino</b>
+        </div>
+        <div>
+            <b>Jython</b>
+        </div>
+        <div>
+            <b>Hazelcast</b> Group Management of Cluster Members
+        </div>
+    </div>
+    <div id="codesample" class="step" data-x="19000" data-y="-1500">
+/** Simple Http server
+ * In Groovy of course :
+ **/
+vertx.createHttpServer().requestHandler { req ->
+  def file = req.uri == "/" ? "index.html" : req.uri
+  req.response.sendFile "webroot/$file"
+}.listen(8080)
+    </div>
+    <div id="EventBus" class="step" style="text-align: center;" data-x="21000" data-y="-1500">
+        <div><b>Event Bus</b></div>
+        <div>Nervous system of vert.x</div>
+        <div>Whatever language, verticles collaborate on the same event bus</div>
+        <div>Publish/Subscribe</div>
+        <div>Point to Point</div>
+        <div>JSON Messages</div>
+    </div>
+    <div id="EventBusDiagramme" class="step" data-x="21000" data-y="-3000">
+        <img src="img/eventbus.png" style="position:absolute; margin-top: -35% ;margin-left: -250px; left:50%;"/>
+    </div>
+    <div id="MultiThreading" class="step"  style="text-align: center;" data-x="23000" data-y="-1500">
+        <div><b>Message passing</b></div>
+        <div>Actor Model</div>
+        <div>Communication between Verticles, vert.x instances through Event Bus</div>
+        <div>Shared Immutable Data</div>       
+    </div>
+    <div id="MultiThreadingDiagramme" class="step" data-x="23000" data-y="-1000">
+        <div>Carl Hewitt 1973</div>
+        <div>A universal modular ACTOR formalism for artificial intelligence</div>
+        <div>Erlang, AKKA ...</div>
+    </div>
+    <div id="MultiThreadingDiagramme2" class="step" data-x="23000" data-y="-500">
+        <img src="img/actors.svg" style="width:800px; background: white;"/>
+    </div>
+    <div id="MultiThreadingDiagramme3" class="step" data-x="23000" data-y="0">
+        <div><b>Actors</b></div>
+        <div style="text-align: center;" >Sending messages, reacting to received ones by executing a given function.</div>
+        <div><b>Messages</b></div>
+        <div style="text-align: center;" >JSON</div>
+        <div><b>Mailboxes</b></div>
+        <div style="text-align: center;" >Event Bus</div>
+    </div>
+    <div id="ServerPush" class="step"  style="text-align: center;" data-x="25000" data-y="-1500">
+        <div><b>WebSocket</b></div>
+        <div><img src="img/server-push.png" style="background: white;"/></div>       
+        <div>SockJS for non modern browser (IE6)</div>
+    </div>
+    <div id="When" class="step " data-x="27000" data-y="-1500">
+        <div><b>When can I use vertx, node, ... </b></div>
+        <div style="text-align: center;" >Lots of concurrent connection</div>
+        <div style="text-align: center;">Realtime application</div>
+        <div><b>When not</b></div>
+        <div style="text-align: center;">Using blocking I/O</div>
+        <div><b>Consequences</b></div>
+        <div style="text-align: center;">Different programming concept also means training</p></div>
+    </div>
+    <div id="demo" class="step big" data-x="0" data-y="-1000">
+        <div><b>Demo</b></div>
+        <div style="font-size:40px;">Like the presentation format?</div>
+        <div id="technologies" style="font-size:40px;font-weight:bold;"></div>
+        <div style="margin-top : 100px; font-size:20px;">*I'm finish with javascript for today</div>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="00" data-scale="10">
+    </div>
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/ace-uncompressed-noconflict.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jcloud.js"></script>
+<script src="js/jquery-airport.js"></script>
+<script>window.onload = function() {
+        var codesample = ace.edit("codesample");
+        codesample.setTheme("ace/theme/clouds");
+        codesample.getSession().setMode("ace/mode/groovy");
+    }
+
+
+var settings = {
+        "size" : {
+            "grid" : 8
+        },
+        "options" : {
+            "color" : "random-dark",
+            "printMultiplier" : 3
+        },
+        "shape" : "square"
+    }
+$("#wordcloud").awesomeCloud( settings );
+
+$("#technologies").airport([ 'impress.js', 'Ace editor', 'jQuery', 'jQuery Airport', 'jCloud' ]);
+
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+
+</html>

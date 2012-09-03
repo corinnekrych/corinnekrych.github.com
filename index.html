@@ -7,13 +7,15 @@
 	<title>Corinne Krych</title>
 	<meta name="description" content="let me introduce myself" />
     <meta name="author" content="Corinne Krych" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />	 
-
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 <link href="css/impress-demo.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 <body>
 <div id="impress">	 
-
     <div id="Presentation" class="step big" data-x="-4000" data-y="-3000">
         <img src="img/corinne.png" style="width:128px; height:128px;"/>
         <p>Corinne Krych</p><br>
@@ -24,49 +26,123 @@
         <a href="https://plus.google.com/u/0/115252170034907237047/posts"><img src="img/gplus.png" style="position:absolute ;left:75%;width:64px;"/></a>
     </div>
     <div id="values" class="step" style="margin-top: -100px;text-align: center;" data-x="-2000" data-y="-3000">
-        <div><q>Values</q>
-    Code is craft
-    Collaboration is key
-    DRY KISS Practitioner
-    TDD Obsessed
-    Delve into Mobile application
-    Motto: Always room for improvement, refactor
-
-I love chatting the latest tech trends at coffee break: female geek -what do you expect-
-
-Social coding fan: tweet me
-
-        <p>40y Geek 15y exp.</p>
-        <p>DEV-SEP-DV2-ARC-ARN</p>
-    </div>
-         <img src="img/rivieragug.jpg" style="position:absolute; left:5px; width:128px"/>
-         <div class="small" style="margin-top: 200px;position:absolute; left:5px; width:128px">Co-Founder</div>
-         <img src="img/3musket33rs.jpeg" style="position:absolute; margin-left: -64px; left:50%;width:128px;"/>
-         <div class="small" style="margin-top: 200px;position:absolute; margin-left: -64px; left:50%;width:128px;">Grails Plugin Developer</div>
-         <img src="img/blueball.jpeg" style="position:absolute ;right:5px ;width:128px; "/>
-         <div class="small" style="margin-top: 200px;position:absolute ;right:5px ;width:128px; ">System Architect</div>
-    </div>
-    <div id="ProblemSpace" class="step big" style="width:1000px" data-x="-500" data-y="-3000">
-        <b>Problem Space</b>
+        <q>My Values</q>
         <div id="wordcloud" style="height:500px;width:800px;"> 
-            <span data-weight="9">Mobile</span>
-            <span data-weight="6">Twitter</span>
-            <span data-weight="5">PC</span>
-            <span data-weight="8">FaceBook</span>
-            <span data-weight="7">RealTime Chat</span>
-            <span data-weight="8">Social</span>
-            <span data-weight="8">Video</span>
-            <span data-weight="8">Streaming</span>
-            <span data-weight="4">Music</span>
+            <span data-weight="9">Code is Craft</span>
+            <span data-weight="7">Less is More</span>
+            <span data-weight="6">DRY</span>
+            <span data-weight="5">KISS</span>
+            <span data-weight="7">TDD Obsessed</span>
+            <span data-weight="5">Collaboration</span>
+            <span data-weight="3">Social Coding Fun</span>
+            <span data-weight="8">Refactor</span>
+            <span data-weight="4">Chat and Code</span>
+            <span data-weight="4">Always room for improvement</span>
+            <span data-weight="7">Ownership</span>
+            <span data-weight="3">Continious Learning</span>
         </div>
     </div>
-    <div id="why" class="step" data-x="-1000" data-y="-1500">
-        <q>Who has used synchronized?</q>
+
+    <div id="mobile" class="step big" style="width:1000px" data-x="-500" data-y="-3000">
+  <div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+      <h3>3.musket33rs</h3>
     </div>
-    <div id="why2" class="step big" data-x="-1000" data-y="-1500" data-scale="0.01">
-	<p>You did it<b>wrong</b></p>
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" role="heading">Projects</li>
+        <li data-theme="c">
+          <a href="http://3musket33rs.github.com/html5-mobile-scaffolding/" rel="external" data-transition="slide"> Grails Html5 Mobile Scaffolding Plugin </a>
+        <li />
+        <li data-theme="c">
+          <a href="https://github.com/3musket33rs/jsonp/" rel="external" data-transition="slide"> Grails JSONP Plugin </a>
+        <li />
+        <li data-theme="c">
+          <a href="https://github.com/3musket33rs/phonegapbuild/" rel="external" data-transition="slide"> Grails PhoneGap Build Plugin </a>
+        <li />
+      </ul>
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" role="heading">Members</li>
+        <li>
+          <a style="display: inline-block;" href="#Aramis" data-rel="dialog" data-transition="pop">
+            <img src="resources/img/sebastien.png" />
+            <h3>Aramis</h3>
+          </a>
+          <a href="https://twitter.com/sebi2706">
+            <img src="resources/img/twitter.png" />
+          </a>
+          <a href="https://github.com/fabricematrat">
+            <img src="resources/img/github-icon.png" />
+          </a>
+          <a href="#Aramis" data-rel="dialog" data-transition="pop"> Aramis </a>
+        <li />
+        <li>
+          <a style="display: inline-block;" href="#Athos" data-rel="dialog" data-transition="pop">
+            <img src="resources/img/corinne.png" />
+            <h3>Athos</h3>
+          </a>
+          <a href="https://twitter.com/corinnekrych">
+            <img src="resources/img/twitter.png" />
+          </a>
+          <a href="https://github.com/corinnekrych">
+            <img src="resources/img/github-icon.png" />
+          </a>
+          <a href="#Athos" data-rel="dialog" data-transition="pop"> Athos </a>
+        <li />
+        <li>
+          <a style="display: inline-block;" href="#Porthos" data-rel="dialog" data-transition="pop">
+            <img src="resources/img/fabrice.png" />
+            <h3>Porthos</h3>
+          </a>
+          <a href="https://twitter.com/fabricematrat">
+            <img src="resources/img/twitter.png" />
+          </a>
+          <a href="https://github.com/fabricematrat">
+            <img src="resources/img/github-icon.png" />
+          </a>
+          <a href="#Porthos" data-rel="dialog" data-transition="pop"> Porthos </a>
+        <li />
+      </ul>
     </div>
-    <div id="why3" class="step" data-x="1000" data-y="-1500">
+    <div data-theme="a" data-role="footer" data-position="fixed">
+      <a class="ui-btn-left" rel="external" href="https://github.com/3musket33rs">
+        <img src="resources/img/github-icon.png" />
+      </a>
+      <h1>
+        Powered by us (
+        <a href="mailto:th33musk3t33rs@gmail.com">th33musk3t33rs@gmail.com</a>
+        )
+      </h1>
+      <a class="ui-btn-right" rel="external" href="https://twitter.com/3musket33rs">
+        <img src="resources/img/twitter.png" />
+      </a>
+    </div>
+  </div>
+
+         <b>Mobile Addict</b>
+        
+        <p>Mobile Webapps</p>
+        <p>Hybrid Apps</p>
+        <p>Native Apps</p> 
+    </div>
+
+    <div id="mobile2" class="step" data-x="-1000" data-y="-1500">
+      <q>Synchro</q>
+    </div>
+    
+    <div id="grails" class="step big" data-x="-1000" data-y="-1500" data-scale="0.01">
+        <q>Grails and Groovy Passionate</q>
+        <div>
+             <a href="http://www.rivieragug.org"><img src="img/rivieragug.jpg" style="position:absolute; left:5px; width:128px"/></a>
+             <a href="http://www.rivieragug.org"><div class="small" style="margin-top: 200px;position:absolute; left:5px; width:128px">Co-Founder</div></a>
+             <a href="http://3musket33rs.github.com/"><img src="img/3musket33rs.jpeg" style="position:absolute; margin-left: -64px; left:50%;width:128px;"/></a>
+             <a href="http://3musket33rs.github.com/"><div class="small" style="margin-top: 200px;position:absolute; margin-left: -64px; left:50%;width:128px;">Grails Plugin Developer</div></a>
+             <a href="http://gr8conf.eu/Speakers/Corinne-Krych"><img src="img/gr8conf.jpeg" style="position:absolute;right:5px;width:128px;"/></a>
+             <a href="http://gr8conf.eu/Speakers/Corinne-Krych"><div class="small" style="margin-top: 200px;position:absolute ;right:5px ;width:128px; ">Speaker</div></a>
+        </div>
+    </div>
+    
+    <div id="crazy" class="step" data-x="1000" data-y="-1500">
         <q>Who uses lock object?</q>
     </div>
     <div id="why4" class="step big" data-x="1000" data-y="-1500"  data-scale="0.01">
@@ -241,13 +317,16 @@ vertx.createHttpServer().requestHandler { req ->
 </div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    $("#hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    //document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
 
 
-<script src="js/ace-uncompressed-noconflict.js"></script>
-<script src="js/jquery.js"></script>
+<script src="js/ace-uncompressed-noconflict.js"></script> 
+<!-- <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.js"></script> -->
+<!-- <script src="js/jquery.js"></script> -->
 <script src="js/jcloud.js"></script>
 <script src="js/jquery-airport.js"></script>
 <script>window.onload = function() {

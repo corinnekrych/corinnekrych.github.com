@@ -7,16 +7,26 @@
 	<title>Corinne Krych</title>
 	<meta name="description" content="let me introduce myself" />
     <meta name="author" content="Corinne Krych" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/prez.css" rel="stylesheet" />
 <link href="css/impress-demo.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/BouncingBalls.js"></script>
+<script type="text/javascript">
 
+$('#mobile_for_fun').live('pageshow', function(e) {
+    init();
+});
+
+
+</script> 
 </head>
 <body>
 <div id="impress">	 
     <div id="Presentation" class="step big" data-x="-4000" data-y="-3000">
         <img src="img/corinne.png" style="width:128px; height:128px;"/>
-        <p>Corinne Krych</p><br>
+        <p>Corinne Krych</p>
+        <p style="font-size: 30px;color:pink">Fancy a presentation tour?</p>
+        <p style="font-size: 20px;color:pink">Use arrow keys to navigate</p><br>
         <a rel="external" href="https://twitter.com/corinnekrych"><img src="img/twitter.png" style="position:absolute; left:15%; width:64px"/></a>
         <a rel="external" href="https://github.com/corinnekrych"><img src="img/github.png" style="position:absolute;left:30%;width:64px;"/></a>
         <a rel="external" href="http://corinnekrych.blogspot.fr/"><img src="img/blogger.png" style="position:absolute;left:45%;width:64px;"/></a>
@@ -30,8 +40,10 @@
             <span data-weight="7">Less is More</span>
             <span data-weight="6">DRY</span>
             <span data-weight="5">KISS</span>
+            <span data-weight="6">Craft</span>
             <span data-weight="7">TDD Obsessed</span>
             <span data-weight="5">Collaboration</span>
+            <span data-weight="3">Open Source</span>
             <span data-weight="3">Social Coding Fun</span>
             <span data-weight="8">Refactor</span>
             <span data-weight="4">Chat and Code</span>
@@ -41,38 +53,97 @@
         </div>
     </div>
 
-    <div id="mobile_for_fun" class="step big" style="width:1000px" data-x="-500" data-y="-3000">
-        <q>Mobile for Fun</q>
-        <br/>
-        <div style="float:left;font-size:30px;text-align:left;">
-        Let's start with a game, that all where it's started after all. Get bored of meeting? Enjoy BSG
-        </div>
-        <div style="float:right;font-size:30px;text-align:left;">
-            <iframe src="http://www.limejs.com/static/roundball/index.html" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
-        </div>
-    </div>
+    <div id="part_1" class="step big" style="width:1000px" data-x="-500" data-y="-3000">
+        <q>Part I</q>
+        <br/><br/> 
+        <p>Mobile</p>      
 
-    <div id="native_vs_hybrid" class="step big" style="width:1000px" data-x="-500" data-y="-6000">
-        <q>Native versus Hybrid?</q>
-        <br/>
-        
-        <iframe src="musketeers.html" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
-        <iframe src="musketeers.html" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
     </div>
-
-    <div id="mobile_synchro" class="step" data-x="-500" data-y="-8000">
-      <q>Delving deeper into mobile</q>
-      <q>Working offline</q>
-      Single user synchronization...
-    </div>
-
-    <div id="mobile_synchro_multiuser" class="step" data-x="-500" data-y="-10000">
-      <q>Server push</q>
-      <q></q>
-      Multi user fun
-    </div>    
     
-    <div id="grails" class="step big" data-x="1500" data-y="-10000" >
+    <div id="mobile_for_fun" class="step big" style="width:1000px" data-x="1000" data-y="-3000">
+        <q>Mobile for Fun</q>
+        <br/><br/>
+        <div style="float: left; font-size: 20px; text-align: left; display: inline-block; width: 465px;">
+        <p>To start with, I think Mobile is all about fun.</p>
+        <p>Writing Mobile apps sounds like having fun.</p><br/>
+        <p>Powered with JQuery Mobile you write responsive and progressive enhancement mobile apps in a short time.</p><br>
+        <p>Playing with HTML5 and its canvas magic</p>
+        <canvas id="myCanvas" width="400" height="300"></canvas> 
+        
+        </div>
+        <div style="float:right;font-size:30px;text-align:right;display:inline-block;">
+            <iframe src="BSBingo.html" width="400px" height="550px" name="myFrame" id="myFrame"></iframe>
+        </div>
+    </div>
+
+    <div id="server_push" class="step big" style="width:1000px" data-x="1000" data-y="-6000">
+        <q>Multi-Users, Real Time</q><br/>
+        <br/>
+        <div style="float: left; font-size: 20px; text-align: left; width: 1250px;">
+        <p>Back to our BS Bingo game, single-user, client side. </p>
+        <p style="font-size: 20px;color:pink;" >Suppose we want to play cross meeting rooms? or you prefer a push notification rather that standing up ;)</p>
+        <p>Let's add some more fun and make it a real-time multi-users applications.</p>
+        <p style="font-size: 20px;color:pink;">Players register the virtual meeting. When one player wins, the two others are notified with Game Over</p>
+
+        <div style="display:inline-block;float:left;width: 400px;" >
+            <iframe src="BSBingo.html#playing_game" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
+        </div>
+        <div style="display:inline-block;float:left;width:25px"><br></div>
+        <div style="display:inline-block;float:left;width: 400px;" >
+            <iframe src="BSBingo.html#playing_game" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
+        </div>
+
+        <div style="display:inline-block;float:right;width: 400px;" >
+            <iframe src="BSBingo.html#playing_game" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
+        </div>
+        </div>
+    </div>
+
+    <div id="server_push2" class="step" data-x="1000" data-y="-8000">
+      <q>Push Notification</q>
+      <div style="font-size: 20px; text-align: left; ">
+        <p>I enhance the application with server side notifications:</p>
+        <ul>
+            <li>Server written in JavaScript using node.js</li> 
+            <li>Server pushed to Cloud foundry</li>
+        </ul>
+        <p>Paradigms</p>
+          <ul>
+            <li></li>
+            <li>Blocking I/O vs. Event-Driven I/O</li>
+          </ul>
+          <p>I could have used Vert.x</p>
+      </div>
+    </div>
+
+    <div id="synchro" class="step" data-x="1000" data-y="-10000">
+      <q>Offline and Synchronization</q>
+        <br/>
+        <div style="width:1200px">
+            <div style="float: left; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
+                <p style="font-size: 22px;color:pink;" >Saving local data</p><br/>
+                <p>Back to our BS Bingo game, do you want to add new keywords?</p>
+                <p style="font-size: 20px;color:pink;" >Suppose we want to have thematic cards, and then share them to other users adding them to the Deck. It's just sending data server side and save them.</p>
+            </div>
+            <div style="float: left; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
+                <p style="font-size: 22px;color:pink;" >Queuing Offline</p><br/>
+                <p>But you're on a mobile right. What happens if you add a new deck and your internet connection went down. Need to work offline</p>
+            </div>
+            <div style="float: right; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
+                <p style="font-size: 22px;color:pink;" >Online Synchro</p><br/>
+                <p>When the connection's back you want to synchro your data. But if your multi users one of your co-worker might have updated some data in your deck...</p>
+            </div>
+        </div>
+        <div style="float: left; font-size: 20px; text-align: left; width: 1000px;"><img src="img/synchro.png"/></div>
+    </div>   
+
+    <div id="part_2" class="step big" data-x="2500" data-y="-10000" >
+        <q>Part II</q>
+        <br/><br/> 
+        <p>Groovy, Grails</p>    
+    </div>
+
+    <div id="grails" class="step big" data-x="2500" data-y="-12000" >
         <q>Grails and Groovy Passionate</q>
         <div>
             <a rel="external" href="http://www.rivieragug.org"><img src="img/rivieragug.jpg" style="position:absolute; left:5px; width:128px"/></a>
@@ -84,180 +155,64 @@
         </div>
     </div>
     
-    <div id="grails_meets_mobile" class="step big" style="width:1000px" data-x="-500" data-y="-12000" data-scale="0.01">
-        <q>When Grails meets Mobile</q>
+    <div class="step" data-x="2500" data-y="-14000" style="width: 1200px;">
+        <p style="font-size: 40px;color:#FEEBB2" >WHAT IS A GROOVY DSL?</p>
+
+        <blockquote style="text-align: left;font-size:30px;"><strong>Domain-specific language</strong> (noun): a computer programming language of limited expressiveness focused on a particular domain</blockquote>
+        <div style="text-align: left;font-size: 15px;" class="general quote-author">- Martin Fowler</div>
+
+        <p style="font-size: 40px;color:#FEEBB2" >NATURAL LANGUAGE DSL</p>
+        <p style="width:1200px;font-size:30px;text-align:left;">Scripting User Interactive with natural language made easy with Groovy.  
+        </p>
+
+        <p style="font-size:40px;color:#FEEBB2" >COMMAND CHAINING</p>
+        <div style="width:1200px;font-size:30px;text-align:left;">
+          <div>ask "question" assign to variable => ask("question").assign(to).variable;</div>
+        </div>
+    </div> 
+ 
+    <div class="step" data-x="2500" data-y="-16000" style="width: 1200px;height:600px">
+        <p style="font-size: 40px;color:#FEEBB2">Write your own question</p>
+        <div id="editor7" style="width: 1000px;height:400px">ask "whatever question" assign to answer</div><br><br><br><br><br><br><br>
+        <p style="width:1200px;font-size:20px;text-align:left;">This is pure groovy code. The editor is powered by ACE. Groovy controller is running on remote cloud foundry server, run it using the keys ctrl+S (mac osx )</p>
+    </div>
+
+    <div  class="step code" style="width:800px;heigth:600px;font-size: 25px;" id="output7" data-x="3500" data-y="-16000" data-scale = "0.4">
+    <pre id="scriptContent"></pre>
+    <div class="surveystart" id="displayQuestion"></div>
+    <input style="width:800px;font-size: 25px;" class="surveystart" id="answer"></input><br>
+    <button style="width:100px;font-size: 25px;float:right" class="surveystart" id="submitButton" name="Run">Next</button>
+    </div>
+
+
+    <div id="part_3" class="step big" data-x="5500" data-y="-16000" >
+        <q>Part III</q>
+        <br/><br/> 
+        <p>When Grails meets Mobile</p>    
+    </div>
+
+    <div id="grails_meets_mobile" class="step big" style="width:1000px" data-x="5500" data-y="-18000">
+        <q>3musket33rs</q><br>
+        <p style="font-size: 22px;color:pink;" >Writing Grails plugins for Mobile webapps</p><br>
         <br/>
         <iframe src="musketeers.html" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
 
    </div>
-    <!-- <div id="crazy" class="step" data-x="1000" data-y="-1500">
-        <q>Who uses lock object?</q>
+
+    <div id="the_end" class="step big" data-x="5500" data-y="-20000" >
+        <q>A last word</q>
+        <br/><br/> 
     </div>
-    <div id="why4" class="step big" data-x="1000" data-y="-1500"  data-scale="0.01">
-        <q>You <b>definitely</b> did it <b>wrong</b></q>
+
+    <div class="step" data-x="-1700" data-y="500" data-scale = "1.5">
+    <div style="float:left;width:1000px;">
+        <div style="font-size:30px;font-weight:bold">Like the presentation format?</div> 
+        <div id="technologies" style="font-size:30px;"></div>
+            
+        <div style="font-size:30px;font-weight:bold">You can download a pdf version of my resume</div>
+        <a  href="pdf/CorinneKrych2011.pdf"><img src="img/Adobe-PDF.gif" style="position:absolute; width:128px"/></a>
     </div>
-    <div id="consequences" class="step" data-x="3700" data-y="-1500"  data-rotate="90">
-        <div class="big" style="text-align: center;">
-            <b>Starvation</b>
-        </div>
-        <div>
-		 <img src="img/cheetah.gif" style="position:absolute; left:0px; width:256px"/>
-		 <img src="img/arrow.png" style="position:absolute; margin-left: -64px; left:50%;width:128px;"/>
-		 <img src="img/snail.png" style="margin-top: -50px; position:absolute ;right:0px ;width:256px; "/>
-         </div>
-    </div>
-    <div id="bigproblem" class="step big" data-x="3000" data-y="-1500"  data-rotate="90" data-scale="10">
-        <q>The <b>C10K</b> problem</q>
-    </div>
-    <div id="theory" class="step" style="margin-top: -100px;text-align: center;" data-x="5000" data-y="-1500">
-        <p><b>Reactor Pattern</b></p>
-        <p>Douglas C. Schmidt</p>
-        <p>Pattern Languages of Program Design 1995 </p>
-        <div style="font-size:30px;">ISBN 0-201-6073-4</div>
-        <div>
-        <span style="font-size:30px;position:absolute ;left:0px ;width:300px;">http://www.cse.wustl.edu/~schmidt/PDF/reactor-siemens.pdf</span>
-        <span><img src="img/pattern.gif" style="position:absolute ;right:0px ;width:256px; "/></span> 
-    </div>
-    </div>
-    <div id="theoryReactor" class="step"  style="width: 435px;" data-x="5000" data-y="-500">
-        <img src="img/classdiagram_reactor.png"/>
-    </div>
-    <div id="theoryReactor2" class="step" style="width: 569px; " data-x="5000" data-y="500">
-        <img src="img/interaction_reactor_pattern.png"/>
-    </div>
-    <div id="theoryReactor3" class="step" data-x="5000" data-y="1500">
-        <img src="img/reactor-pattern.jpg"/>
-    </div>
-    <div id="NodeJS" class="step" data-x="7000" data-y="-1500">
-         <img src="img/nodejs.png" style="width:800px;" />
-    </div>
-    <div id="ClassicalMTS" class="step" data-x="7000" data-y="-500">
-         <img src="img/multiThreadedServer.png" style="width:800px;"/>
-    </div>
-    <div id="NodeJSReactor" class="step" data-x="7000" data-y="500">
-         <img src="img/NodeJS-Reactor.png" style="width:800px;"/>
-    </div>
-    <div id="bored2" class="step big" data-x="9000" data-y="-1500">
-        <q>Node.js is <b>JavaScript</b> only</q>
-    </div>
-    <div id="exiting" class="step big" data-x="11000" data-y="-1500" data-rotate="90">
-        <q>What if you want a <b>real</b> language ?</q>
-    </div>
-    <div id="moreexiting" class="step" data-x="13000" data-y="-1500">
-      <div class="hero-unit" style="color:black; padding: 30px;">
-        <h1>vert.x</h1>
-        <p class="title">Effortless asynchronous application development for the modern
-          web and enterprise</p>          
-      </div>
-    </div>
-    <div id="evenmore" class="step" style="text-align: center;" data-x="13000" data-y="-1300">
-        Polyglot
-    </div>
-    <div id="evenmore1" class="step" style="text-align: center;" data-x="13000" data-y="-1200">
-        Scalability
-    </div>
-    <div id="evenmore2" class="step" style="text-align: center;" data-x="13000" data-y="-1100">
-        Simplicity
-    </div>
-    <div id="evenmore3" class="step" style="text-align: center;" data-x="13000" data-y="-1000">
-        Concurrency
-    </div>
-    <div id="evenmore4" class="step" style="text-align: center;" data-x="13000" data-y="-900">
-        Distributed Event Bus
-    </div>
-    <div id="evenmore5" class="step" style="text-align: center;" data-x="13000" data-y="-800">
-        Embedebable
-    </div>
-    <div id="evenmore6" class="step" style="text-align: center;" data-x="13000" data-y="-600">        
-        Read yourself the documentation at http://vertx.io
-    </div>
-    <div id="goodies" class="step" style="text-align: center;" data-x="17000" data-y="-1500">
-        <div>
-            Amazing Open Source Projects
-        </div>
-        <div>
-            <b>Netty</b> Network IO
-        </div>
-        <div>
-            <b>JRuby</b>
-        </div>
-        <div>
-            <b>Groovy</b>
-        </div>
-        <div>
-            <b>Mozilla Rhino</b>
-        </div>
-        <div>
-            <b>Jython</b>
-        </div>
-        <div>
-            <b>Hazelcast</b> Group Management of Cluster Members
-        </div>
-    </div>
-    <div id="codesample" class="step" data-x="19000" data-y="-1500">
-/** Simple Http server
- * In Groovy of course :
- **/
-vertx.createHttpServer().requestHandler { req ->
-  def file = req.uri == "/" ? "index.html" : req.uri
-  req.response.sendFile "webroot/$file"
-}.listen(8080)
-    </div>
-    <div id="EventBus" class="step" style="text-align: center;" data-x="21000" data-y="-1500">
-        <div><b>Event Bus</b></div>
-        <div>Nervous system of vert.x</div>
-        <div>Whatever language, verticles collaborate on the same event bus</div>
-        <div>Publish/Subscribe</div>
-        <div>Point to Point</div>
-        <div>JSON Messages</div>
-    </div>
-    <div id="EventBusDiagramme" class="step" data-x="21000" data-y="-3000">
-        <img src="img/eventbus.png" style="position:absolute; margin-top: -35% ;margin-left: -250px; left:50%;"/>
-    </div>
-    <div id="MultiThreading" class="step"  style="text-align: center;" data-x="23000" data-y="-1500">
-        <div><b>Message passing</b></div>
-        <div>Actor Model</div>
-        <div>Communication between Verticles, vert.x instances through Event Bus</div>
-        <div>Shared Immutable Data</div>       
-    </div>
-    <div id="MultiThreadingDiagramme" class="step" data-x="23000" data-y="-1000">
-        <div>Carl Hewitt 1973</div>
-        <div>A universal modular ACTOR formalism for artificial intelligence</div>
-        <div>Erlang, AKKA ...</div>
-    </div>
-    <div id="MultiThreadingDiagramme2" class="step" data-x="23000" data-y="-500">
-        <img src="img/actors.svg" style="width:800px; background: white;"/>
-    </div>
-    <div id="MultiThreadingDiagramme3" class="step" data-x="23000" data-y="0">
-        <div><b>Actors</b></div>
-        <div style="text-align: center;" >Sending messages, reacting to received ones by executing a given function.</div>
-        <div><b>Messages</b></div>
-        <div style="text-align: center;" >JSON</div>
-        <div><b>Mailboxes</b></div>
-        <div style="text-align: center;" >Event Bus</div>
-    </div>
-    <div id="ServerPush" class="step"  style="text-align: center;" data-x="25000" data-y="-1500">
-        <div><b>WebSocket</b></div>
-        <div><img src="img/server-push.png" style="background: white;"/></div>       
-        <div>SockJS for non modern browser (IE6)</div>
-    </div>
-    <div id="When" class="step " data-x="27000" data-y="-1500">
-        <div><b>When can I use vertx, node, ... </b></div>
-        <div style="text-align: center;" >Lots of concurrent connection</div>
-        <div style="text-align: center;">Realtime application</div>
-        <div><b>When not</b></div>
-        <div style="text-align: center;">Using blocking I/O</div>
-        <div><b>Consequences</b></div>
-        <div style="text-align: center;">Different programming concept also means training</p></div>
-    </div>
-    <div id="demo" class="step big" data-x="0" data-y="-1000">
-        <div><b>Demo</b></div>
-        <div style="font-size:40px;">Like the presentation format?</div>
-        <div id="technologies" style="font-size:40px;font-weight:bold;"></div>
-        <div style="margin-top : 100px; font-size:20px;">*I'm finish with javascript for today</div>
-    </div>
-    <div id="overview" class="step" data-x="3000" data-y="00" data-scale="10">
-    </div> -->
+
 </div>
 
 <div class="hint">
@@ -273,30 +228,150 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/jcloud.js"></script>
 <script src="js/jquery-airport.js"></script>
 <script>window.onload = function() {
-        document.getElementById("impress").addEventListener( "impress:stepenter", function (event) {
 
-            var step = event.target;
+    var editor7 = ace.edit("editor7");
+    editor7.setTheme("ace/theme/clouds");
+    editor7.getSession().setMode("ace/mode/groovy");
 
-            var settings = {
-                    "size" : {
-                        "grid" : 8
-                    },
-                    "options" : {
-                        "color" : "random-light",
-                        "printMultiplier" : 3
-                    },
-                    "shape" : "circle"
-                }
-            $("#wordcloud").awesomeCloud( settings );
+    var commands7 = editor7.commands;
 
-            }, false);
-    }
+    commands7.addCommand({
+        name : "save7",
+        bindKey : {
+            win : "Ctrl-S",
+            mac : "Command-S",
+            sender : "editor7"
+        },
+        exec : function() {
+            var value = editor7.getSession().getValue();
+            var title = $('#titleCreate').val();            
+            submitCreateForm(title, value, "#output7");
+        }
+    });
+    
+    commands7.addCommand({
+        name : "step",
+        bindKey : {
+            win : "1",
+            mac : "1",
+            sender : "editor7"
+        },
+        exec : function() {
+            var value = editor7.getSession().getValue();
+            var value = "ask \"whatever question\" assign to answer\n";
+
+            editor7.insert(value);
+        }
+    });
+    
+    
+
+}
+    
+function submitCreateForm(title, input, output) {
+    //var url = "http://localhost:8080/DslPrez/survey/create?=";
+    var url = "http://dslprez.cloudfoundry.com/survey/create?=";
+    $.post(url, {
+        title:"myScript", content:input
+    },function (data) {
+        $("#displayQuestion").removeData();
+        $('.displayAnswer').remove();
+        $(".surveystart").show();
+        $("#displayQuestion").data('scriptId',data.id);
+        $("#displayQuestion").data('scriptContent',data.content);
+        $('#scriptContent').text(data.content)
+        $('#submitButton').click();
+    });
+}
+
+
+
+
+        
+function submitForm(input, output) {
+    var url = "http://dslprez.cloudfoundry.com/console/execute?=";
+    //var url = "http://localhost:8080/DslPrez/console/execute?=";
+    $.post(url, {
+        content : input
+    }, function(data) {
+        var value = "";
+        if (data.stacktrace === "" || data.stacktrace.buffer !== undefined) {
+            value = data.result;
+        } else {
+            value = data.stacktrace;
+        }
+        $(output).text(value);
+        impress().next();
+    });
+}
+
+// id:1, action:run, controller:survey
+// id:1, lastAssignement:name, counter:1, answer:jjjjj, answerMap:{}, action:run, controller:survey -->
+
+$('#submitButton').bind('click', function() {
+    var answer = $('#answer').val();
+    $('#answer').val('');
+    var answerMap = $("#displayQuestion").data('answerMap');
+    var scriptId = $("#displayQuestion").data('scriptId');
+    var counter = $("#displayQuestion").data('counter');
+    var lastAssignement = $("#displayQuestion").data('lastAssignement');
+    if (answerMap)
+      answerMap[lastAssignement] = answer;
+    var stringAnswerMap = JSON.stringify(answerMap)
+    //var url = "http://localhost:8080/DslPrez/survey/run?=";
+    var url = "http://dslprez.cloudfoundry.com/survey/run?=";
+    
+    $.post(url, {
+        scriptId:scriptId, lastAssignement:lastAssignement, counter:counter, answer:answer, answerMap:stringAnswerMap
+    }, function(data) {
+
+        var answerMap = data.answerMap;
+        var counter= data.counter;
+        var lastAssignement = data.lastAssignement;
+        $("#displayQuestion").data('answerMap',answerMap);
+        $("#displayQuestion").data('counter',counter);
+        $("#displayQuestion").data('lastAssignement',lastAssignement);
+        if(data.finished==true) {
+            var index = 1;
+            $(".surveystart").hide();
+            for (answer in answerMap) {
+                var output7Value = '<div class="displayAnswer">For variable ' + answer +', answer is '+answerMap[answer] +'</div>';
+              $("#output7").append(output7Value);
+              index++;
+            }
+        } else {
+            $("#displayQuestion").text(data.question);
+        }
+    });
+});
+        
+    // At each step
+    document.getElementById("impress").addEventListener( "impress:stepenter", function (event) {
+
+        var step = event.target;
+
+        var settings = {
+                "size" : {
+                    "grid" : 8
+                },
+                "options" : {
+                    "color" : "random-light",
+                    "printMultiplier" : 3
+                },
+                "shape" : "circle"
+            }
+        $("#wordcloud").awesomeCloud( settings );
+
+        init();
+
+        }, false);
 
 
 $("#technologies").airport([ 'impress.js', 'Ace editor', 'jQuery', 'jQuery Airport', 'jCloud' ]);
 
 </script>
 <script src="js/impress.js"></script>
+<script src="js/ace-uncompressed-noconflict.js"></script>
 <script>impress().init();</script>
 </body>
 

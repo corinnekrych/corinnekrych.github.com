@@ -32,6 +32,7 @@ $('#mobile_for_fun').live('pageshow', function(e) {
         <a rel="external" href="http://corinnekrych.blogspot.fr/"><img src="img/blogger.png" style="position:absolute;left:45%;width:64px;"/></a>
         <a rel="external" href="mailto:corinnekrych@gmail.com"><img src="img/gmail.png" style="position:absolute;left:60%;width:64px;"/></a>
         <a rel="external" href="https://plus.google.com/u/0/115252170034907237047/posts"><img src="img/gplus.png" style="position:absolute ;left:75%;width:64px;"/></a>
+        <a rel="external" href="fr.linkedin.com/pub/corinne-krych/46/b78/194"><img src="img/in.png" style="position:absolute ;left:87%;width:80px;"/></a>
     </div>
     <div id="values" class="step" style="margin-top: -100px;text-align: center;" data-x="-2000" data-y="-3000">
         <q>My Values</q>
@@ -76,9 +77,10 @@ $('#mobile_for_fun').live('pageshow', function(e) {
         </div>
     </div>
 
-    <div id="server_push" class="step big" style="width:1000px" data-x="1000" data-y="-6000">
-        <q>Multi-Users, Real Time</q><br/>
+    <div id="server_push" class="step" style="width:1200px" data-x="1000" data-y="-6000">
+        <q>Multi-Users, Real Time</q>
         <br/>
+        <span style="font-size: 20px;"><img src="img/work.png"/>Working on it. Coming soon!</span>
         <div style="float: left; font-size: 20px; text-align: left; width: 1250px;">
         <p>Back to our BS Bingo game, single-user, client side. </p>
         <p style="font-size: 20px;color:pink;" >Suppose we want to play cross meeting rooms? or you prefer a push notification rather that standing up ;)</p>
@@ -100,42 +102,60 @@ $('#mobile_for_fun').live('pageshow', function(e) {
     </div>
 
     <div id="server_push2" class="step" data-x="1000" data-y="-8000">
-      <q>Push Notification</q>
-      <div style="font-size: 20px; text-align: left; ">
-        <p>I enhance the application with server side notifications:</p>
+      <q>Push Notification</q><br/><br>
+      
+      <div style="display:inline-block;float:left;width: 400px;font-size: 20px; text-align: left; ">
+        <p>Real notification between browsers:</p>
         <ul>
-            <li>Server written in JavaScript using node.js</li> 
+            <li>Simple server with vert.x, WebSocket</li> 
             <li>Server pushed to Cloud foundry</li>
         </ul>
         <p>Paradigms</p>
           <ul>
-            <li></li>
+            <li>Asynchronous programmation</li>
             <li>Blocking I/O vs. Event-Driven I/O</li>
           </ul>
-          <p>I could have used Vert.x</p>
+          <p>I could have used node.js</p> <br>
+          <span style="font-size: 20px;"><img src="img/work.png"/>&nbsp;More to come!</span>
       </div>
-    </div>
+          <div style="display:inline-block;float:left;width: 400px;" >
+              <img src="img/push.jpeg">
+        </div>
+    </div> 
 
-    <div id="synchro" class="step" data-x="1000" data-y="-10000">
-      <q>Offline and Synchronization</q>
-        <br/>
-        <div style="width:1200px">
-            <div style="float: left; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
+    <div id="synchro1" class="step" data-x="1000" data-y="-10000">
+        <q>Offline and Synchronization</q>
+        <div style="width:800px">
+            <div style="float: left; font-size: 20px; text-align: left;display:inline-block;">
                 <p style="font-size: 22px;color:pink;" >Saving local data</p><br/>
                 <p>Back to our BS Bingo game, do you want to add new keywords?</p>
                 <p style="font-size: 20px;color:pink;" >Suppose we want to have thematic cards, and then share them to other users adding them to the Deck. It's just sending data server side and save them.</p>
             </div>
+        </div>
+        <div style="float: left; font-size: 20px; text-align: left; width: 1000px;"><img style="width: 800px;" src="img/synchro.png"/></div>
+    </div>  
+
+     <div id="synchro2" class="step" data-x="1000" data-y="-10000">
+        <div style="width:800px">
+
             <div style="float: left; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
                 <p style="font-size: 22px;color:pink;" >Queuing Offline</p><br/>
                 <p>But you're on a mobile right. What happens if you add a new deck and your internet connection went down. Need to work offline</p>
             </div>
+
+        </div>
+
+    </div>  
+     <div id="synchro3" class="step" data-x="1000" data-y="-10000">
+
+        <div style="width:800px">
+
             <div style="float: right; font-size: 20px; text-align: left; width: 400px;display:inline-block;">
                 <p style="font-size: 22px;color:pink;" >Online Synchro</p><br/>
                 <p>When the connection's back you want to synchro your data. But if your multi users one of your co-worker might have updated some data in your deck...</p>
             </div>
         </div>
-        <div style="float: left; font-size: 20px; text-align: left; width: 1000px;"><img src="img/synchro.png"/></div>
-    </div>   
+    </div>            
 
     <div id="part_2" class="step big" data-x="2500" data-y="-10000" >
         <q>Part II</q>
@@ -200,17 +220,48 @@ $('#mobile_for_fun').live('pageshow', function(e) {
    </div>
 
     <div id="the_end" class="step big" data-x="5500" data-y="-20000" >
-        <q>A last word</q>
+        <q>What's next</q>
         <br/><br/> 
     </div>
 
-    <div class="step" data-x="-1700" data-y="500" data-scale = "1.5">
+    <div id="on_my_plate" class="step" data-x="7000" data-y="-20000">
+      <q>On my plate</q><br/>
+      
+      <div style="font-size: 20px; text-align: left;width: 900px; ">
+        <p>My head is full of ideas and projects, hope I can realize half of it!</p><br>
+        <div style="color:pink;display:inline-block;float:left;width: 300px;font-size: 20px; text-align: left; ">
+            <p>Organizing:</p>
+            <ul>
+                <li>Programatoo with JDuchess, 27th October, Riviera JUG</li> 
+                <li>Working on next Riviera GUG event. After <a href="http://corinnekrych.blogspot.fr/2012/08/back-to-coding-we-story.html">Riviera Coding WE</a>, we've got to find something great.</li>
+            </ul>
+        </div>
+        <div style="display:inline-block;float:left;width: 300px;font-size: 20px; text-align: left; ">
+            <p>Presenting:</p>
+            <ul>
+                <li>Greach 2013, Madrid, January</li> 
+                <li>Grails eXchange 2012</li>
+                <li>Hands-on with JDuchess on Mobile Apps, 2013</li>
+            </ul>
+        </div>
+        <div style="color:pink;display:inline-block;float:right;width: 300px;font-size: 20px; text-align: left; ">
+            <p>Writing:</p>
+              <ul>
+                <li>Article about Mobile Apps for Groovy Mag</li>
+                <li>Mobile synchro grails plugin with 3musket33rs</li>
+              </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="step" data-x="-1700" data-y="-20000">
     <div style="float:left;width:1000px;">
         <div style="font-size:30px;font-weight:bold">Like the presentation format?</div> 
         <div id="technologies" style="font-size:30px;"></div>
             
         <div style="font-size:30px;font-weight:bold">You can download a pdf version of my resume</div>
         <a  href="pdf/CorinneKrych2011.pdf"><img src="img/Adobe-PDF.gif" style="position:absolute; width:128px"/></a>
+                <a rel="external" href="fr.linkedin.com/pub/corinne-krych/46/b78/194"><img src="img/in.png" style="position:absolute ;left:35%;width:128px;"/></a>
     </div>
 
 </div>

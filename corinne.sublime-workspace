@@ -28,84 +28,11 @@
 	"buffers":
 	[
 		{
-			"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=1024\" />\n	<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n	<title>Corinne Krych</title>\n	<meta name=\"description\" content=\"let me introduce myself\" />\n    <meta name=\"author\" content=\"Corinne Krych\" />\n<link href=\"http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic\" rel=\"stylesheet\" />\n<link href=\"css/impress-demo.css\" rel=\"stylesheet\" />\n<script src=\"http://code.jquery.com/jquery-1.7.1.min.js\"></script>\n\n</head>\n<body>\n<div id=\"impress\">	 \n    <div id=\"Presentation\" class=\"step big\" data-x=\"-4000\" data-y=\"-3000\">\n        <img src=\"img/corinne.png\" style=\"width:128px; height:128px;\"/>\n        <p>Corinne Krych</p><br>\n        <a rel=\"external\" href=\"https://twitter.com/corinnekrych\"><img src=\"img/twitter.png\" style=\"position:absolute; left:15%; width:64px\"/></a>\n        <a rel=\"external\" href=\"https://github.com/corinnekrych\"><img src=\"img/github.png\" style=\"position:absolute;left:30%;width:64px;\"/></a>\n        <a rel=\"external\" href=\"http://corinnekrych.blogspot.fr/\"><img src=\"img/blogger.png\" style=\"position:absolute;left:45%;width:64px;\"/></a>\n        <a rel=\"external\" href=\"mailto:corinnekrych@gmail.com\"><img src=\"img/gmail.png\" style=\"position:absolute;left:60%;width:64px;\"/></a>\n        <a rel=\"external\" href=\"https://plus.google.com/u/0/115252170034907237047/posts\"><img src=\"img/gplus.png\" style=\"position:absolute ;left:75%;width:64px;\"/></a>\n    </div>\n    <div id=\"values\" class=\"step\" style=\"margin-top: -100px;text-align: center;\" data-x=\"-2000\" data-y=\"-3000\">\n        <q>My Values</q>\n        <div id=\"wordcloud\" style=\"height:500px;width:800px;\"> \n            <span data-weight=\"9\">Code is Craft</span>\n            <span data-weight=\"7\">Less is More</span>\n            <span data-weight=\"6\">DRY</span>\n            <span data-weight=\"5\">KISS</span>\n            <span data-weight=\"7\">TDD Obsessed</span>\n            <span data-weight=\"5\">Collaboration</span>\n            <span data-weight=\"3\">Social Coding Fun</span>\n            <span data-weight=\"8\">Refactor</span>\n            <span data-weight=\"4\">Chat and Code</span>\n            <span data-weight=\"4\">Always room for improvement</span>\n            <span data-weight=\"7\">Ownership</span>\n            <span data-weight=\"3\">Continuous Learning</span>\n        </div>\n    </div>\n\n    <div id=\"mobile_for_fun\" class=\"step big\" style=\"width:1000px\" data-x=\"-500\" data-y=\"-3000\">\n        <q>Mobile for Fun</q>\n        <br/>\n        <div style=\"float:left;font-size:30px;text-align:left;\" width=\"400px\" height=\"500px\">\n        <p>Let's start with a game, that all where it's started after all.</p>\n        <p>Get bored of meeting? Enjoy BSG</p>\n        </div>\n        <div style=\"float:right;\">\n            <iframe src=\"http://www.limejs.com/static/roundball/index.html\" width=\"400px\" height=\"500px\" name=\"myFrame\" id=\"myFrame\"></iframe>\n        </div>\n    </div>\n\n    <div id=\"native_vs_hybrid\" class=\"step big\" style=\"width:1000px\" data-x=\"-500\" data-y=\"-6000\">\n        <q>Native versus Hybrid?</q>\n        <br/>\n        \n        <iframe src=\"musketeers.html\" width=\"400px\" height=\"500px\" name=\"myFrame\" id=\"myFrame\"></iframe>\n        <iframe src=\"musketeers.html\" width=\"400px\" height=\"500px\" name=\"myFrame\" id=\"myFrame\"></iframe>\n    </div>\n\n    <div id=\"mobile_synchro\" class=\"step\" data-x=\"-500\" data-y=\"-8000\">\n      <q>Delving deeper into mobile</q>\n      <q>Working offline</q>\n      Single user synchronization...\n    </div>\n\n    <div id=\"mobile_synchro_multiuser\" class=\"step\" data-x=\"-500\" data-y=\"-10000\">\n      <q>Server push</q>\n      <q></q>\n      Multi user fun\n    </div>    \n    \n    <div id=\"grails\" class=\"step big\" data-x=\"1500\" data-y=\"-10000\" >\n        <q>Grails and Groovy Passionate</q>\n        <div>\n            <a rel=\"external\" href=\"http://www.rivieragug.org\"><img src=\"img/rivieragug.jpg\" style=\"position:absolute; left:5px; width:128px\"/></a>\n             <a rel=\"external\" href=\"http://www.rivieragug.org\"><div class=\"small\" style=\"margin-top: 200px;position:absolute; left:5px; width:128px\">Co-Founder</div></a>\n             <a rel=\"external\" href=\"http://3musket33rs.github.com/\"><img src=\"img/3musket33rs.jpeg\" style=\"position:absolute; margin-left: -64px; left:50%;width:128px;\"/></a>\n             <a rel=\"external\" href=\"http://3musket33rs.github.com/\"><div class=\"small\" style=\"margin-top: 200px;position:absolute; margin-left: -64px; left:50%;width:128px;\">Grails Plugin Developer</div></a>\n             <a rel=\"external\" href=\"http://gr8conf.eu/Speakers/Corinne-Krych\"><img src=\"img/gr8conf.jpeg\" style=\"position:absolute;right:5px;width:128px;\"/></a>\n             <a rel=\"external\" href=\"http://gr8conf.eu/Speakers/Corinne-Krych\"><div class=\"small\" style=\"margin-top: 200px;position:absolute ;right:5px ;width:128px; \">Speaker</div></a>\n        </div>\n    </div>\n    \n    <div id=\"grails_meets_mobile\" class=\"step big\" style=\"width:1000px\" data-x=\"-500\" data-y=\"-12000\" data-scale=\"0.01\">\n        <q>When Grails meets Mobile</q>\n        <br/>\n        <iframe src=\"musketeers.html\" width=\"400px\" height=\"500px\" name=\"myFrame\" id=\"myFrame\"></iframe>\n\n   </div>\n    <!-- <div id=\"crazy\" class=\"step\" data-x=\"1000\" data-y=\"-1500\">\n        <q>Who uses lock object?</q>\n    </div>\n    <div id=\"why4\" class=\"step big\" data-x=\"1000\" data-y=\"-1500\"  data-scale=\"0.01\">\n        <q>You <b>definitely</b> did it <b>wrong</b></q>\n    </div>\n    <div id=\"consequences\" class=\"step\" data-x=\"3700\" data-y=\"-1500\"  data-rotate=\"90\">\n        <div class=\"big\" style=\"text-align: center;\">\n            <b>Starvation</b>\n        </div>\n        <div>\n		 <img src=\"img/cheetah.gif\" style=\"position:absolute; left:0px; width:256px\"/>\n		 <img src=\"img/arrow.png\" style=\"position:absolute; margin-left: -64px; left:50%;width:128px;\"/>\n		 <img src=\"img/snail.png\" style=\"margin-top: -50px; position:absolute ;right:0px ;width:256px; \"/>\n         </div>\n    </div>\n    <div id=\"bigproblem\" class=\"step big\" data-x=\"3000\" data-y=\"-1500\"  data-rotate=\"90\" data-scale=\"10\">\n        <q>The <b>C10K</b> problem</q>\n    </div>\n    <div id=\"theory\" class=\"step\" style=\"margin-top: -100px;text-align: center;\" data-x=\"5000\" data-y=\"-1500\">\n        <p><b>Reactor Pattern</b></p>\n        <p>Douglas C. Schmidt</p>\n        <p>Pattern Languages of Program Design 1995 </p>\n        <div style=\"font-size:30px;\">ISBN 0-201-6073-4</div>\n        <div>\n        <span style=\"font-size:30px;position:absolute ;left:0px ;width:300px;\">http://www.cse.wustl.edu/~schmidt/PDF/reactor-siemens.pdf</span>\n        <span><img src=\"img/pattern.gif\" style=\"position:absolute ;right:0px ;width:256px; \"/></span> \n    </div>\n    </div>\n    <div id=\"theoryReactor\" class=\"step\"  style=\"width: 435px;\" data-x=\"5000\" data-y=\"-500\">\n        <img src=\"img/classdiagram_reactor.png\"/>\n    </div>\n    <div id=\"theoryReactor2\" class=\"step\" style=\"width: 569px; \" data-x=\"5000\" data-y=\"500\">\n        <img src=\"img/interaction_reactor_pattern.png\"/>\n    </div>\n    <div id=\"theoryReactor3\" class=\"step\" data-x=\"5000\" data-y=\"1500\">\n        <img src=\"img/reactor-pattern.jpg\"/>\n    </div>\n    <div id=\"NodeJS\" class=\"step\" data-x=\"7000\" data-y=\"-1500\">\n         <img src=\"img/nodejs.png\" style=\"width:800px;\" />\n    </div>\n    <div id=\"ClassicalMTS\" class=\"step\" data-x=\"7000\" data-y=\"-500\">\n         <img src=\"img/multiThreadedServer.png\" style=\"width:800px;\"/>\n    </div>\n    <div id=\"NodeJSReactor\" class=\"step\" data-x=\"7000\" data-y=\"500\">\n         <img src=\"img/NodeJS-Reactor.png\" style=\"width:800px;\"/>\n    </div>\n    <div id=\"bored2\" class=\"step big\" data-x=\"9000\" data-y=\"-1500\">\n        <q>Node.js is <b>JavaScript</b> only</q>\n    </div>\n    <div id=\"exiting\" class=\"step big\" data-x=\"11000\" data-y=\"-1500\" data-rotate=\"90\">\n        <q>What if you want a <b>real</b> language ?</q>\n    </div>\n    <div id=\"moreexiting\" class=\"step\" data-x=\"13000\" data-y=\"-1500\">\n      <div class=\"hero-unit\" style=\"color:black; padding: 30px;\">\n        <h1>vert.x</h1>\n        <p class=\"title\">Effortless asynchronous application development for the modern\n          web and enterprise</p>          \n      </div>\n    </div>\n    <div id=\"evenmore\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-1300\">\n        Polyglot\n    </div>\n    <div id=\"evenmore1\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-1200\">\n        Scalability\n    </div>\n    <div id=\"evenmore2\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-1100\">\n        Simplicity\n    </div>\n    <div id=\"evenmore3\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-1000\">\n        Concurrency\n    </div>\n    <div id=\"evenmore4\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-900\">\n        Distributed Event Bus\n    </div>\n    <div id=\"evenmore5\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-800\">\n        Embedebable\n    </div>\n    <div id=\"evenmore6\" class=\"step\" style=\"text-align: center;\" data-x=\"13000\" data-y=\"-600\">        \n        Read yourself the documentation at http://vertx.io\n    </div>\n    <div id=\"goodies\" class=\"step\" style=\"text-align: center;\" data-x=\"17000\" data-y=\"-1500\">\n        <div>\n            Amazing Open Source Projects\n        </div>\n        <div>\n            <b>Netty</b> Network IO\n        </div>\n        <div>\n            <b>JRuby</b>\n        </div>\n        <div>\n            <b>Groovy</b>\n        </div>\n        <div>\n            <b>Mozilla Rhino</b>\n        </div>\n        <div>\n            <b>Jython</b>\n        </div>\n        <div>\n            <b>Hazelcast</b> Group Management of Cluster Members\n        </div>\n    </div>\n    <div id=\"codesample\" class=\"step\" data-x=\"19000\" data-y=\"-1500\">\n/** Simple Http server\n * In Groovy of course :\n **/\nvertx.createHttpServer().requestHandler { req ->\n  def file = req.uri == \"/\" ? \"index.html\" : req.uri\n  req.response.sendFile \"webroot/$file\"\n}.listen(8080)\n    </div>\n    <div id=\"EventBus\" class=\"step\" style=\"text-align: center;\" data-x=\"21000\" data-y=\"-1500\">\n        <div><b>Event Bus</b></div>\n        <div>Nervous system of vert.x</div>\n        <div>Whatever language, verticles collaborate on the same event bus</div>\n        <div>Publish/Subscribe</div>\n        <div>Point to Point</div>\n        <div>JSON Messages</div>\n    </div>\n    <div id=\"EventBusDiagramme\" class=\"step\" data-x=\"21000\" data-y=\"-3000\">\n        <img src=\"img/eventbus.png\" style=\"position:absolute; margin-top: -35% ;margin-left: -250px; left:50%;\"/>\n    </div>\n    <div id=\"MultiThreading\" class=\"step\"  style=\"text-align: center;\" data-x=\"23000\" data-y=\"-1500\">\n        <div><b>Message passing</b></div>\n        <div>Actor Model</div>\n        <div>Communication between Verticles, vert.x instances through Event Bus</div>\n        <div>Shared Immutable Data</div>       \n    </div>\n    <div id=\"MultiThreadingDiagramme\" class=\"step\" data-x=\"23000\" data-y=\"-1000\">\n        <div>Carl Hewitt 1973</div>\n        <div>A universal modular ACTOR formalism for artificial intelligence</div>\n        <div>Erlang, AKKA ...</div>\n    </div>\n    <div id=\"MultiThreadingDiagramme2\" class=\"step\" data-x=\"23000\" data-y=\"-500\">\n        <img src=\"img/actors.svg\" style=\"width:800px; background: white;\"/>\n    </div>\n    <div id=\"MultiThreadingDiagramme3\" class=\"step\" data-x=\"23000\" data-y=\"0\">\n        <div><b>Actors</b></div>\n        <div style=\"text-align: center;\" >Sending messages, reacting to received ones by executing a given function.</div>\n        <div><b>Messages</b></div>\n        <div style=\"text-align: center;\" >JSON</div>\n        <div><b>Mailboxes</b></div>\n        <div style=\"text-align: center;\" >Event Bus</div>\n    </div>\n    <div id=\"ServerPush\" class=\"step\"  style=\"text-align: center;\" data-x=\"25000\" data-y=\"-1500\">\n        <div><b>WebSocket</b></div>\n        <div><img src=\"img/server-push.png\" style=\"background: white;\"/></div>       \n        <div>SockJS for non modern browser (IE6)</div>\n    </div>\n    <div id=\"When\" class=\"step \" data-x=\"27000\" data-y=\"-1500\">\n        <div><b>When can I use vertx, node, ... </b></div>\n        <div style=\"text-align: center;\" >Lots of concurrent connection</div>\n        <div style=\"text-align: center;\">Realtime application</div>\n        <div><b>When not</b></div>\n        <div style=\"text-align: center;\">Using blocking I/O</div>\n        <div><b>Consequences</b></div>\n        <div style=\"text-align: center;\">Different programming concept also means training</p></div>\n    </div>\n    <div id=\"demo\" class=\"step big\" data-x=\"0\" data-y=\"-1000\">\n        <div><b>Demo</b></div>\n        <div style=\"font-size:40px;\">Like the presentation format?</div>\n        <div id=\"technologies\" style=\"font-size:40px;font-weight:bold;\"></div>\n        <div style=\"margin-top : 100px; font-size:20px;\">*I'm finish with javascript for today</div>\n    </div>\n    <div id=\"overview\" class=\"step\" data-x=\"3000\" data-y=\"00\" data-scale=\"10\">\n    </div> -->\n</div>\n\n<div class=\"hint\">\n    <p>Use a spacebar or arrow keys to navigate</p>\n</div>\n<script>\nif (\"ontouchstart\" in document.documentElement) { \n    $(\"#hint\").innerHTML = \"<p>Tap on the left or right to navigate</p>\";\n    //document.querySelector(\".hint\").innerHTML = \"<p>Tap on the left or right to navigate</p>\";\n}\n</script>\n\n<script src=\"js/jcloud.js\"></script>\n<script src=\"js/jquery-airport.js\"></script>\n<script>window.onload = function() {\n        document.getElementById(\"impress\").addEventListener( \"impress:stepenter\", function (event) {\n\n            var step = event.target;\n\n            var settings = {\n                    \"size\" : {\n                        \"grid\" : 8\n                    },\n                    \"options\" : {\n                        \"color\" : \"random-light\",\n                        \"printMultiplier\" : 3\n                    },\n                    \"shape\" : \"circle\"\n                }\n            $(\"#wordcloud\").awesomeCloud( settings );\n\n            }, false);\n    }\n\n\n$(\"#technologies\").airport([ 'impress.js', 'Ace editor', 'jQuery', 'jQuery Airport', 'jCloud' ]);\n\n</script>\n<script src=\"js/impress.js\"></script>\n<script>impress().init();</script>\n</body>\n\n</html>",
 			"file": "index.html",
-			"file_size": 14569,
-			"file_write_time": 1346795093000000,
 			"settings":
 			{
-				"buffer_size": 14287,
+				"buffer_size": 18553,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/bingo/ch10/BSBingo.html",
-			"settings":
-			{
-				"buffer_size": 4632,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "function Bingo(phrases){\n    this.phrases = phrases;\n    this.init();\n};\n\nBingo.prototype.init = function() {\n	this.card = this.randomFeed();\n	var out = '';\n	for (var i = 0 ; i <this.card.length; i++) {\n		var modulo = i%5;\n		var charTheme = String.fromCharCode(97 + modulo);\n		out = out + '<div id=\"item_' + i + '\" class=\"ui-block-'+ charTheme +'\"><div class=\"ui-bar ui-bar-e\" style=\"height:60px\"><br>'+ this.card[i].label+'</div></div>';\n	};\n	// Populate grid\n	$(\"#grid\").append(out);\n\n	// Add event to each cell of grid\n	for (var i = 0 ; i <this.card.length; i++) {\n		var selector = \"#item_\" + i + \" div\";\n		$(selector).on(\"click\", null, {scope: this, index: i}, this.selectItem);\n	};\n};\n\nBingo.prototype.randomFeed = function() {\n	var tempArray = this.phrases;\n	var randomFeedArray =[];\n    while (tempArray.length > 0) {\n		var randInt = Math.floor(Math.random()*tempArray.length);\n		randomFeedArray.push({label:tempArray[randInt], selected:false});\n		tempArray.splice(randInt, 1);\n    }\n\n	return randomFeedArray;\n};\n\nBingo.prototype.selectItem = function(event) {\n  event.data.scope.card[event.data.index].selected = true;\n  $(this).removeClass('ui-bar-e').addClass('ui-bar-b');\n  var displayPopup = Bingo.prototype.areYouAboutToYellBullShit.call(this);\n\n};\n\nBingo.prototype.areYouAboutToYellBullShit = function(arg1, arg2) {\n	var isFirstColumBingo = $(\"div[class*='ui-block-a'] div[class*='ui-bar-b']\").length==5;\n	var isSecondColum = $(\"div[class*='ui-block-b'] div[class*='ui-bar-b']\").length==5;\n	var isThirdColum = $(\"div[class*='ui-block-c'] div[class*='ui-bar-b']\").length==5;\n	var isFourthColum = $(\"div[class*='ui-block-d'] div[class*='ui-bar-b']\").length==5;\n	var isFifthColum = $(\"div[class*='ui-block-e'] div[class*='ui-bar-b']\").length==5;\n\n	if(isFifthColum || isFourthColum || isThirdColum || isSecondColum || isFirstColumBingo) {\n		$(\"#bingoDialog\").click();\n	}\n\n	return false;\n\n\n\n};\n",
-			"file": "/Users/corinne/workspace/bingo/ch10/Bingo.js",
-			"file_size": 1960,
-			"file_write_time": 1347051537000000,
-			"settings":
-			{
-				"buffer_size": 1903,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "function TextButton(x,y,text, width, height, backColor, strokeColor, overColor, textColor){\n    this.x=x;\n    this.y=y;\n    this.text=text;\n    this.width=width;\n    this.height=height;\n    this.backColor=backColor;\n    this.strokeColor=strokeColor;\n    this.overColor=overColor;\n    this.textColor=textColor;\n    this.press=false;\n}\n\nTextButton.prototype.pressDown=function() {\n    if (this.press==true){\n        this.press=false;\n    }else{\n        this.press=true;\n    }\n}\n\nTextButton.prototype.draw=function(context){\n    \n    context.save();\n    context.setTransform(1,0,0,1,0,0); // reset to identity\n    context.translate(this.x, this.y);\n  \n    context.shadowOffsetX=3;\n    context.shadowOffsetY=3;\n    context.shadowBlur=3;\n    context.shadowColor=\"#222222\";\n    \n    context.lineWidth=4;\n    context.lineJoin='round';\n    context.strokeStyle=this.strokeColor;\n    \n    if (this.press==true){\n        context.fillStyle=this.overColor;\n    } else {\n       context.fillStyle=this.backColor;\n    }\n    \n    context.strokeRect(0, 0, this.width,this.height);\n    context.fillRect(0, 0, this.width,this.height);\n    \n    \n    //text\n    context.shadowOffsetX=1;\n    context.shadowOffsetY=1;\n    context.shadowBlur=1;\n    context.shadowColor=\"#ffffff\";\n    context.font =  \"14px serif\" \n    context.fillStyle    = this.textColor;\n    context.textAlign=\"center\";\n    context.textBaseline=\"middle\";\n    var metrics = context.measureText(this.text)\n    var textWidth = metrics.width;\n    var xPosition =  this.width/2;\n    var yPosition = (this.height/2);\n    \n    var splitText=this.text.split('\\n');\n    var verticalSpacing=14;\n    console.log(\"text=\" + this.text)\n    console.log(\"text split length=\" + splitText.length)\n    \n    for (var ctr1=0; ctr1<splitText.length;ctr1++) {\n        context.fillText  ( splitText[ctr1],  xPosition, yPosition+ (ctr1*verticalSpacing));\n    }\n    \n    \n   \n    \n    context.restore();\n    \n}\n\n\n\n",
-			"file": "/Users/corinne/workspace/bingo/ch10/TextButton.js",
-			"file_size": 1930,
-			"file_write_time": 1283268268000000,
-			"settings":
-			{
-				"buffer_size": 1932,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/bingo/ch10/ConsoleLog.js",
-			"settings":
-			{
-				"buffer_size": 387,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-list.js",
-			"settings":
-			{
-				"buffer_size": 2348,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/bingo/ch10/BSBingo copy.html",
-			"settings":
-			{
-				"buffer_size": 13657,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-edit.js",
-			"settings":
-			{
-				"buffer_size": 3438,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/corinne/workspace/3musket33rs.github.com/index.html",
-			"settings":
-			{
-				"buffer_size": 5530,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -133,10 +60,18 @@
 	},
 	"file_history":
 	[
-		"/Users/corinne/workspace/3musket33rs.github.com/index.html",
-		"/Users/corinne/workspace/bingo/ch10/bingo.js",
+		"/Users/corinne/workspace/groovyDsl/web-app/editor.html",
+		"/Users/corinne/workspace/groovyDsl/web-app/DSLPresentation.html",
+		"/Users/corinne/workspace/corinnekrych.github.com/css/impress-demo.css",
+		"/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-edit.js",
+		"/Users/corinne/workspace/bingo/ch10/BSBingo copy.html",
+		"/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-list.js",
+		"/Users/corinne/workspace/bingo/ch10/ConsoleLog.js",
+		"/Users/corinne/workspace/bingo/ch10/TextButton.js",
+		"/Users/corinne/workspace/bingo/ch10/Bingo.js",
 		"/Users/corinne/workspace/bingo/ch10/BSBingo.html",
-		"/Users/corinne/workspace/bingo/ch10/TextButton.js"
+		"/Users/corinne/workspace/3musket33rs.github.com/index.html",
+		"/Users/corinne/workspace/bingo/ch10/bingo.js"
 	],
 	"find":
 	{
@@ -156,6 +91,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"twitt",
 			").('",
 			"120px",
 			",\"#ffff00\",",
@@ -186,7 +122,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -194,15 +130,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 14287,
+						"buffer_size": 18553,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1625,
-								1631
+								10736,
+								10736
 							]
 						],
 						"settings":
@@ -212,224 +148,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/corinne/workspace/bingo/ch10/BSBingo.html",
-					"settings":
-					{
-						"buffer_size": 4632,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1836,
-								1694
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 212.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/corinne/workspace/bingo/ch10/Bingo.js",
-					"settings":
-					{
-						"buffer_size": 1903,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								682,
-								610
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/corinne/workspace/bingo/ch10/TextButton.js",
-					"settings":
-					{
-						"buffer_size": 1932,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								378,
-								335
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/corinne/workspace/bingo/ch10/ConsoleLog.js",
-					"settings":
-					{
-						"buffer_size": 387,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-list.js",
-					"settings":
-					{
-						"buffer_size": 2348,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1826,
-								1826
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 742.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/corinne/workspace/bingo/ch10/BSBingo copy.html",
-					"settings":
-					{
-						"buffer_size": 13657,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/corinne/workspace/html5-mobile-scaffolding-test/web-app/js/author-edit.js",
-					"settings":
-					{
-						"buffer_size": 3438,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								905,
-								914
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 258.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/corinne/workspace/3musket33rs.github.com/index.html",
-					"settings":
-					{
-						"buffer_size": 5530,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4919,
-								4174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1378.0,
+						"translation.y": 2708.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

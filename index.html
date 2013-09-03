@@ -69,7 +69,7 @@ $('#mobile_for_fun').live('pageshow', function(e) {
         <div style="float: left; font-size: 20px; text-align: left; display: inline-block; width: 465px;">
         <p>To start with, I think Mobile is all about fun.</p>
         <p>Writing Mobile apps sounds like having fun.</p><br/>
-        <p>Powered with JQuery Mobile you write responsive and progressive enhancement mobile apps in a short time.</p><br>
+        <!--<p>Powered with JQuery Mobile you write responsive and progressive enhancement mobile apps in a short time.</p><br>-->
         <p>Playing with HTML5 and its canvas magic</p>
         <canvas id="myCanvas" width="400" height="300"></canvas> 
 <!--         <a href="http://www.youtube.com/watch?feature=player_embedded&v=FOL8kQ28XRs"/> -->
@@ -79,28 +79,28 @@ $('#mobile_for_fun').live('pageshow', function(e) {
         </div>
     </div>
 
-    <div id="server_push" class="step" style="width:1200px" data-x="1000" data-y="-6000">
-        <q>Multi-Users, Real Time</q>
-        <br/>
-        <div style="float: left; font-size: 20px; text-align: left; width: 1250px;">
-        <p>Back to our BS Bingo game, single-user, client side. </p>
-        <p style="font-size: 20px;color:pink;" >Suppose we want to play cross meeting rooms? or you prefer a push notification rather that standing up ;)</p>
-        <p>Let's add some more fun and make it a real-time multi-users applications.</p>
-        <p style="font-size: 20px;color:pink;">Players register the virtual meeting. When one player wins, the two others are notified with Game Over</p>
+    <!--<div id="server_push" class="step" style="width:1200px" data-x="1000" data-y="-6000">-->
+    <!--    <q>Multi-Users, Real Time</q>-->
+    <!--    <br/>-->
+    <!--    <div style="float: left; font-size: 20px; text-align: left; width: 1250px;">-->
+    <!--    <p>Back to our BS Bingo game, single-user, client side. </p>-->
+    <!--    <p style="font-size: 20px;color:pink;" >Suppose we want to play cross meeting rooms? or you prefer a push notification rather that standing up ;)</p>-->
+    <!--    <p>Let's add some more fun and make it a real-time multi-users applications.</p>-->
+    <!--    <p style="font-size: 20px;color:pink;">Players register the virtual meeting. When one player wins, the two others are notified with Game Over</p>-->
 
-        <div style="display:inline-block;float:left;width: 400px;" >
-            <iframe src="http://bullshitbingo.cloudfoundry.com" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
-        </div>
-        <div style="display:inline-block;float:left;width:25px"><br></div>
-        <div style="display:inline-block;float:left;width: 400px;" >
-            <iframe src="http://bullshitbingo.cloudfoundry.com" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
-        </div>
+    <!--    <div style="display:inline-block;float:left;width: 400px;" >-->
+    <!--        <iframe src="http://bullshitbingo.cloudfoundry.com" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>-->
+    <!--    </div>-->
+    <!--    <div style="display:inline-block;float:left;width:25px"><br></div>-->
+    <!--    <div style="display:inline-block;float:left;width: 400px;" >-->
+    <!--        <iframe src="http://bullshitbingo.cloudfoundry.com" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>-->
+    <!--    </div>-->
 
-        <div style="display:inline-block;float:right;width: 400px;" >
-            <iframe src="http://bullshitbingo.cloudfoundry.com/" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>
-        </div>
-        </div>
-    </div>
+    <!--    <div style="display:inline-block;float:right;width: 400px;" >-->
+    <!--        <iframe src="http://bullshitbingo.cloudfoundry.com/" width="400px" height="500px" name="myFrame" id="myFrame"></iframe>-->
+    <!--    </div>-->
+    <!--    </div>-->
+    <!--</div>-->
 
     <div id="server_push2" class="step" data-x="1000" data-y="-8000">
       <q>Push Notification</q><br/><br>
@@ -180,7 +180,7 @@ $('#mobile_for_fun').live('pageshow', function(e) {
 
 
 
-        <iframe src="http://dslprez.cloudfoundry.com" width="1000px" height="600px" name="myFrame" id="editorFrame"></iframe>
+        <iframe src="http://dslprez.herokuapp.com" width="1000px" height="600px" name="myFrame" id="editorFrame"></iframe>
     </div>
 
     <div id="part_3" class="step big" data-x="4500" data-y="-16000" >
@@ -241,47 +241,7 @@ if ("ontouchstart" in document.documentElement) {
 
 <script src="js/jcloud.js"></script>
 <script src="js/jquery-airport.js"></script>
-<script>window.onload = function() {
-
-    var editor7 = ace.edit("editor7");
-    editor7.setTheme("ace/theme/clouds");
-    editor7.getSession().setMode("ace/mode/groovy");
-
-    var commands7 = editor7.commands;
-
-    commands7.addCommand({
-        name : "save7",
-        bindKey : {
-            win : "Ctrl-S",
-            mac : "Command-S",
-            sender : "editor7"
-        },
-        exec : function() {
-            var value = editor7.getSession().getValue();
-            var title = $('#titleCreate').val();            
-            submitCreateForm(title, value, "#output7");
-        }
-    });
-    
-    commands7.addCommand({
-        name : "step",
-        bindKey : {
-            win : "1",
-            mac : "1",
-            sender : "editor7"
-        },
-        exec : function() {
-            var value = editor7.getSession().getValue();
-            var value = "ask \"whatever question\" assign to answer\n";
-
-            editor7.insert(value);
-        }
-    });
-    
-    
-
-}
-    
+<script>
 function submitCreateForm(title, input, output) {
     //var url = "http://localhost:8080/DslPrez/survey/create?=";
     var url = "http://dslprez.cloudfoundry.com/survey/create?=";
